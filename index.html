@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Fresh Produce</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- Landing Image -->
+<div class="banner">
+
+<img src="farming copy.png" alt="farming"
+class="banner-img">
+    <button class="order-btn" onclick="showVegetables()">
+        ORDER NOW
+    </button>
+</div>
+
+<!-- Vegetables List -->
+<div class="veg-section" id="vegSection">
+
+    <h2 class="veg-title">Fresh Vegetables</h2>
+
+    <div class="veg-container">
+
+        <div class="veg-card">
+            <img src="Tomato copy.png"
+            <h3>Tomato</h3>
+            <p>టమాటా</p>
+            <button onclick="orderItem(this,
+
+           'Tomato')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="photato copy.png"
+            <h3>Potato</h3>
+            <p>బంగాళాదుంప</p>
+            <button onclick="orderItem(this,
+            'Potato')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="onion copy.png"
+            <h3>Onion</h3>
+            <p>ఉల్లిపాయ</p>
+            <button onclick="orderItem(this,
+            'Onion')">ORDER</button>
+
+        </div>
+
+        <div class="veg-card">
+            <img src="vankai copy.png"
+            <h3>Brinjal</h3>
+            <p>వంకాయ</p>
+            <button onclick="orderItem(this,
+            'Brinjal')">ORDER</button>
+
+        </div>
+
+        <div class="veg-card">
+            <img src="image copy.png"
+            <h3>Okra</h3>
+            <p>బెండకాయ</p>
+            <button onclick="orderItem(this,
+            'Okra')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="file_0000000013c071fa94942bf02cbda057 copy.png"
+            <h3>Bottle Gourd</h3>
+            <p>సొరకాయ</p>
+            <button onclick="orderItem(this,
+            'Bottle Gourd')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="beera copy.png"
+            <h3>Ridge Gourd</h3>
+            <p>బీరకాయ</p>
+            <button onclick="orderItem(this,
+            'Ridge Gourd')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="file_0000000013c071fa94942bf02cbda057-2 copy.png"
+            <h3>Bittergourd</h3>
+            <p>కాకరకాయ</p>
+            <button onclick="orderItem(this,
+            'Bittergourd')">ORDER</button>
+
+        </div>
+
+        <div class="veg-card">
+            <img src="gumadi copy.png"
+            <h3>Pampkin</h3>
+            <p>గుమ్మడికాయ</p>
+            <button onclick="orderItem(this,
+            'Pampkin')">ORDER</button>
+        </div>
+
+        <div class="veg-card">
+            <img src="carrot copy.png"
+            <h3>Carrot</h3>
+            <p>క్యారెట్</p>
+            <button onclick="orderItem(this,
+            'Carrot')">ORDER</button>
+        </div>
+
+    </div>
+</div>
+<div id="orderSummary">
+    <h2>Your Cart</h2>
+    
+    <ul id="orderList"></ul>
+    <h3 id="grandTotal">Grand Total: ₹0</h3>
+    <button id="confirmBtn">Confirm Order</button>
+    <p id="orderMessage"></p>
+</div>
+
+<button onclick="sendWhatsAppOrder()">Send Order WhatsApp</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
