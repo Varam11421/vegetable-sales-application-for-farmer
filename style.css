@@ -1,0 +1,124 @@
+body{
+    background: linear-gradient(120deg,#e6f7e6,#ccf2ff);
+}
+
+/* Landing Image */
+.banner {
+    position: relative;
+    height: 100vh;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Vegetables Section */
+.veg-section {
+    padding: 40px;
+    background: #f5f5f5;
+    display: none;
+}
+
+.veg-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.veg-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.veg-card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.veg-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.veg-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+#orderSummary{
+    background: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: o 4px 8px rgba(0, 0, 0, 0.1);
+}
+#orderList li{
+    padding: 5px;
+}
+.ordered button {
+    background-color: green;
+    color: white;
+}
+.order-btn{
+  background-color: green;
+  padding: 20px;
+ border-radius: 12px;
+  width: 300px;
+  margin-top: 30px;
+}
+#orderMessage {
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#confirmBtn {
+  background-color: #2e7d32;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#confirmBtn:hover {
+  background-color: #1b305e;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.product {
+  flex: 1 1 150px; /* Min width 150px, scale avuthundi */
+  max-width: 200px;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+button {
+  width: 100%; /* Full width in product box */
+  margin-top: 8px;
+}
+@media screen and (max-width: 400px) {
+  .product {
+    flex: 1 1 100%; /* Single column on tiny screens */
+  }
+}
